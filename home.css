@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333
+}
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 8rem;
+    align-items: center;
+    background: #f9f9f9;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 1000;
+    color: black;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    font-size: 0.8rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+}
+
+.buyforit {
+    background-color: #d3e6df;
+    font-size: smaller;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom: none;
+    padding: 10px;
+}
+
+.deals {
+    height: 80vh;
+    background: url('https://media.crocs.com/images/f_auto,q_auto,dpr_auto/w_2200/marketing/2024_DEC_December-Promos_Global-Creative_Ecomm_NA_Onsite_HP-Hero-Large/Crocs') no-repeat center center/cover;
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+}
+
+.deal-text h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.deal-text p {
+    font-weight: lighter;
+    margin: 0;
+}
+
+.deal-text .mybt {
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 5px 10px;
+}
+
+.Sale {
+    margin-top: 30px;
+    border: 2px solid lightgray;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.Sale ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.Sale ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+}
+
+.slider-container {
+    width: calc(192px*6 + 4rem);
+    margin: 0 auto;
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.5s ease-in-out;
+    width: max-content;
+}
+
+.slides div {
+    height: 182px;
+    width: 182px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides div p {
+    background: #FFFFFFCC;
+    font-size: 12px;
+    padding: 4px 12px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.img1 {
+    background: url('https://media.crocs.com/images/f_auto,q_auto,dpr_auto/products/category-carousel-evergreen-sale/Crocss') no-repeat center center/cover;
+}
+
+.img2 {
+    background: url('https://media.crocs.com/images/f_auto,q_auto,dpr_auto/products/category-carousel-olxlinen/Crocs') no-repeat center center/cover;
+}
+
+.img3 {
+    background: url('https://media.crocs.com/images/f_auto,q_auto,dpr_auto/products/category-carousel-fleecelined/Crocs') no-repeat center center/cover;
+}
+
+.img4 {
+    background: url('https://media.crocs.com/images/f_auto,q_auto,dpr_auto/products/category-carousel-s4street-collection/Crocs') no-repeat center center/cover;
+}
+
+.img5 {
+    background: url('https://media.crocs.com/images/f_auto,q_auto,dpr_auto/products/category-carousel-newtocozy/Crocs') no-repeat center center/cover;
+}
+
+.img6 {
+    background: url('https://media.crocs.com/images/f_auto,q_auto,dpr_auto/products/category-carousel-EMEA-dylan-family-story-209869-0WV-chalk/Crocs') no-repeat center center/cover;
+}
+
+.img7 {
+    background: url('https://media.crocs.com/images/f_auto,q_auto,dpr_auto/products/category-carousel-20231117-shop-jibbitz-deals/Crocs') no-repeat center center/cover;
+}
+
+.img-container1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+    width: 1200px;
+    background: url('https://media.crocs.com/images/f_auto,q_auto,dpr_1.5/w_768/marketing/2025_JAN_Valentines-Day_Global-Creative_Ecomm_GLBL_HP-Upsell-Small-NA/Crocs') no-repeat center center/cover;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.img-text1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.nav {
+    position: absolute;
+    top: 40%;
+    background-color: #FBFBFBFB;
+    color: black;
+    border: none;
+    width: 40px;
+    height: 56px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.nav.left {
+    left: 0rem;
+}
+
+.nav.right {
+    right: 0rem;
+}
+
+.img-container2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 1200px;
+    background: url('https://media.crocs.com/images/f_auto,q_auto,dpr_1.5/w_768/marketing/2025_FEB_InMotion_Global-Creative_Ecomm_GLBL_Onsite_HP-Upsell-Small_Kittle_NA-EMEA/Crocs') no-repeat center center/cover;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.img-text2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+}
+
+.footer {
+    background: black;
+    color: white;
+    height: 600px;
+    text-align: center;
+    justify-content: center;
+    padding: 1px;
+}
+
+.footer p {
+    margin-top: 20px;
+}
+
+.footer button {
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+
+}
+
+.footer .white {
+    background-color: white;
+    width: 100%;
+    height: 3px;
+    margin-top: 10px;
+}
+
+.footer nav ul {
+    display: flex;
+    font-size: 1rem;
+    gap: 2rem;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer .button1 {
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 240px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+
+.footer .box-line {
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin-top: 10px;
+}
+
+.footer-links {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 20%;
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-line {
+    width: 10%;
+    border-bottom: 3px solid white;
+    margin-bottom: 5px;
+}
